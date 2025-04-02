@@ -12,16 +12,56 @@
     <link rel="stylesheet" href="css/unicons.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-    <!-- MAIN STYLE -->
     <link rel="stylesheet" href="css/tooplate-style.css">
-    
+    <style> 
+      .clickable-image {
+      cursor: pointer;
+      display: block;
+      margin: 20px auto;
+      }
+      
+      .column {
+      flex: 1;
+      }
+      
+      .column img {
+      width: auto;
+      border-radius: 8px;
+      }
+      
+      .close-button {
+      margin-top: 20px;
+      background: #4db5db;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      align-self: center;
+      }
+      
+      .close-button:hover {
+      background: #4db5db;
+      }
+  
+      .image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .clickable-image {
+    cursor: pointer;
+    display: inline-block;
+  }
+      </style>
   </head>
   <body>
 
     <!-- MENU -->
     <nav class="navbar navbar-expand-sm navbar-light">
-        <div class="container">
+        <div class="container" >
             <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i>Zoia Chernova</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -39,88 +79,62 @@
                     <li class="nav-item">
                         <a href="#project" class="nav-link"><span data-hover="Recent Projects">Recent Projects</span></a>
                     </li>
-                   <!-- <li class="nav-item">
-                        <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a> 
-                    </li> -->
                     <li class="nav-item">
                         <a href="#contact" class="nav-link"><span data-hover="Contact me">Contact me</span></a>
                     </li>
                 </ul>
-
                 <ul class="navbar-nav ml-lg-auto">
-                    <div class="ml-lg-4">
-                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
-                        <i class="color-mode-icon"></i>
-                        Color mode
-                      </div>
+                  <div class="ml-lg-4">
+                    <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                      <i class="color-mode-icon"></i>
+                      Color mode
                     </div>
-                </ul>
+                  </div>
+              </ul>
             </div>
         </div>
     </nav>
-
-    <!-- ABOUT -->
-    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+    <section class="about d-lg-flex justify-content-center align-items-center" id="about">
         <div class="container">
             <div class="row">
-                
                 <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
                     <div class="about-text">
                         <h1 class="animated animated-text">
-                            <span class="mr-2">Hello folks, I'm Zoe Chernova</span>
+                          <p></p>
+                            <span class="mr-2">Hi folks, I'm Zoe Chernova</span>
                                 <div class="animated-info">
                                     <span class="animated-item">Science Journalist</span>
-                                    <span class="animated-item">Communicator</span>
-                                    <span class="animated-item">Medical Marketer</span>
-
-                                    
+                                    <span class="animated-item">Science Communicator</span>
+                                    <span class="animated-item">Medical Marketer</span>   
                                 </div>
                         </h1>
-                        <p>I have been writing about cutting-edge science and medicine for over eight years,  with a focus on science writing and communications, clinical reports and analysis, medical marketing and educational content. Collaborated on marketing projects for leading pharmaceutical companies, including <b>AstraZeneca</b>, <b>Pfizer</b>, <b>Teva</b>, <b>Bayer</b>, <b>Sanofi</b>, and others.
-<br> <br> <h3>I am a multi-skilled professional:</h3>
+                        <p><br>I have been writing about cutting-edge science and medicine for over eight years. Collaborated on marketing projects for leading pharmaceutical companies, including <b>AstraZeneca</b>, <b>Teva</b>, <b>Bayer</b>, <b>Sanofi</b>, and others.
+<br><h4>I am a multi-skilled professional:</h4>
                         </p>
-                      <p>&#8226 Know how to turn the language of numbers, data and graphs into a powerful product that is important for customers;
-                        <br> &#8226 Develop marketing strategies for scientific, biotech and pharmaceutical companies to scale their business and increase customer loyalty;
-                       <br> &#8226 Develop and implement courses in biochemistry, as well as other educational products (Producing educational courses for doctors, Students Summer Camps in Europe, educational tracks about bioinformatics, popular science lections online and offline);
-                       <br> &#8226 Bylines in N+1, MirF, Knife.Media, Skillbox and others;
-                       <br> &#8226 Сan create any content - from multimedia longreads and videos to infographics and magazine layouts;
-                       <br> &#8226 Run the popular science newsletter "<a href="https://duozoid.substack.com/subscribe">Look what I found</a>".
+                      <p>&#8226 Know how to turn the language of data into a powerful product that make customers care
+                       <br> &#8226 Develop marketing strategies for scientific, biotech and pharm. companies
+                       <br> &#8226 Develop courses and other educational products
+                       <br> &#8226 Bylines in The Skeptic, ABSW, N+1, Knife.Media, and others
+                       <br> &#8226 Сan create any science content - from multimedia to magazine layouts
+                       <br> &#8226 Run the popular science newsletter "<a href="https://duozoid.substack.com/subscribe">Look what I found</a>"
+                      <br> &#8226 Member of the Association of British Science Writers
                       </p>
-
-                      <style>
-                        .libutton {
-                          display: flex;
-                          flex-direction: column;
-                          justify-content: center;
-                          padding: 7px;
-                          text-align: center;
-                          outline: none;
-                          text-decoration: none !important;
-                          color: #000000 !important;
-                          width: 200px;
-                          height: 32px;
-                          border-radius: 16px;
-                          background-color: #ffc200;
-                          font-family: "SF Pro Text", Helvetica, sans-serif;
-                        }
-                      </style>   
-               <!-- <a class="libutton" href="" target="_blank">Look at CV</a> -->
                 <div class="custom-btn-group mt-4">
-                          <a href="https://docs.google.com/document/d/138QMKOgldf-wOJ7VrCQYvu_KmUZ6ofwAWkvEb5lw-ew/edit?usp=sharing" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download CV</a>                        </div> 
+                          <a href="https://docs.google.com/document/d/138QMKOgldf-wOJ7VrCQYvu_KmUZ6ofwAWkvEb5lw-ew/edit?usp=sharing" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download CV</a>                        
+                          <a href="portfolio.html" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i>Science journalistic portfolio</a>  
+                        </div> 
                     </div>
                 </div>
 
                 <div class="col-lg-5 col-md-12 col-12">
                     <div class="about-image svg">
-                        <img src="images/undraw/undraw_software_engineer_lvl5.svg" class="img-fluid" alt="svg image">
+                      <p><br><br></p>
+                        <img src="images/undraw/main.png" class="img-fluid" alt="svg image">
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-
-    <!-- PROJECTS -->
     <section class="project py-5" id="project">
         <div class="container">
                 
@@ -130,225 +144,54 @@
                       <div class="col-lg-8 mx-auto">
                         <h2>Some of my recent projects:</h2>
                       </div>
-
-                      <div class="owl-carousel owl-theme">
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/project-image01.png" class="img-fluid" alt="project image">
-                      <!--      <h3><a class="" href="https://hyperskill.org/projects/301">Have a look</a></h3> -->
-                          </div>
+                      <div class="timeline-item">
+                        <div class="image-container">
+                          <a href="scimark.html">
+                          <img src="images/undraw/proj 2.png" alt="Click me 2" id="mainImage2" class="clickable-image" height="300px">
+                          </a>
+                          <a href="scied.html">
+                          <img src="images/undraw/proj 3.png" alt="Click me 3" id="mainImage3" class="clickable-image"  height="300px">
+                          </a>
                         </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                             <img src="images/project/project-image02.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                           <img src="images/project/project-image03.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info" >
-                            <img src="images/project/project-image04.png" class="img-fluid" alt="project image">
-                            <h3><b><a href="https://duozoid.github.io/cats-project/index.html">Have a look</a></b></h3>
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/project-image05.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="project-info">
-                              <img src="images/project/project-image06.png" class="img-fluid" alt="project image">
-                     <!-- <h3><a href="https://knife.media/author/zoya-andreeva/">Have a look</a></h3> -->
-                            </div>
-                          </div>
-
-                         <!-- <div class="item">
-                            <div class="project-info">
-                              <img src="images/project/project-image07.png" class="img-fluid" alt="project image">
-                            </div>
-                          </div> -->
-
-                          <div class="item">
-                            <div class="project-info">
-                              <img src="images/project/project-image08.png" class="img-fluid" alt="project image">
-                     <!--         <h3><a href="https://skillbox.ru/media/authors/zoya-andreeva/">Have a look</a></h3> --> 
-                            </div>
-                          </div>
-
+                        <!-- <a href="scicom.html">
+                          <img src="images/undraw/proj 1.png" alt="Click me 1" id="mainImage1" class="clickable-image"  height="300px">
+                          </a> -->
                       </div>
- <h2>My full portfolio is available <a href="portfolio.html">here</a></h2> 
+                      <p><br></p>
                   </div>
                 </div>
         </div>
     </section>
     
 
-    <!-- FEATURES 
-    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6 col-12">
-                  <h2 class="mb-4">Experiences</h2>
-
-                    <div class="timeline">
-                        <div class="timeline-wrapper">
-                             <div class="timeline-yr">
-                                  <span>2023</span>
-                             </div>
-                             <div class="timeline-info">
-                                  <h3><span>SMM communicator</span><small>Helix Lab</small></h3>
-
-                                    <p><br> &#8226; Developed and implemented social media policies resulting in a 300% increase in engagement
-                                    
-                                    <br> &#8226; Increased the number of subscribers by 2.5 times without attracting advertising traffic
-                                    
-                                    </p>
-                             </div>
-                        </div>
-
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>2022</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>Science writer</span><small>Hyperskill</small></h3>
-                                <p>Created 3 educational tracks for bioinformatics and authored 28 educational topics on medicine (<a href="https://hyperskill.org/learn/step/24603">example)</a></p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>2021</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>Communicator</span><small>RadioMedSynthesys</small></h3>
-                                <p>Developed a corporate website (HTML, CSS, JS, PHP) and wrote dozens of nonclinical materials about radionuclide medications, diagnostic methods, etc</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>2021</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>Medical Communicator</span><small>Knife.media</small></h3>
-                                <p>Produced 31 articles on modern medicine and science, achieving an average of 10,000 views per article  (<a href="https://knife.media/author/zoya-andreeva/">example)</a></p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>2018</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>SMM and Communicator<small>FK.Top</small></h3>
-                                <p>&#8226; Launched a  magazine, achieving 5000 readers
-                                    <br>&#8226; Established and grew a social media network to 12000 followers within 12 months
-                                    </p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>2017</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>Medical writer<small>Academed</small></h3>
-                                <p>&#8226; Created over 100 educational materials for medical professionals
-                                    <br>&#8226; Developed branding materials for pharmaceutical companies
-                                    
-                                    </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-12">
-                  <h2 class="mb-4 mobile-mt-2">Educations and Master Classes</h2>
-
-                    <div class="timeline">
-
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                 <span>2023</span>
-                            </div>
-                            <div class="timeline-info">
-                                 <h3><span>Foundational Skills for Communicating About Health</span><small>University of Michigan</small></h3>
-                            </div>
-                       </div>
-
-                        <div class="timeline-wrapper">
-                             <div class="timeline-yr">
-                                  <span>2021</span>
-                             </div>
-                             <div class="timeline-info">
-                                  <h3><span>Multimedia Journalism</span><small>State University for the Humanities</small></h3>
-                             </div>
-                        </div>
-
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>2017</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>Master of Science</span><small>MSU</small></h3>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>2015</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>Bachelor of Science</span><small>MSU</small></h3>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section> -->
-
-    <!-- CONTACT -->
     <section class="contact py-5" id="contact">
       <div class="container">
         <div class="row">
-          
-          
-          <div class="col-lg-5 mr-lg-5 col-12">
-            <div class="w-100">
-              <img src="images/undraw/me.jpg"></img>
-            </div>
            
           </div>
-
+<style>
+  .libutton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7px;
+    text-align: center;
+    outline: none;
+    text-decoration: none !important;
+    color: #250505 !important;
+    width: 200px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #4db5db;
+    font-family: "SF Pro Text", Helvetica, sans-serif;
+    }</style>
           <div class="col-lg-6 col-12">
-            <div class="contact-form">
-              <h2 class="mb-4">Interested to work together? Let's talk!</h2>
-              <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
-                <div class="contact-info-item">
-                  <h3 class="mb-3 text-white">Say hello :) </h3>
-                  <a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=chernova-zoya-science-communicator" target="_blank">Find me on LinkedIn</a>
-                  <p> <br></p>
-                  <a class="libutton" href="" target="_blank">Email me</a>
+              <h2 >Interested to work together?</h2>
+                  <a class="libutton" href="http://linkedin.com/in/chernova-zoya-science-communicator/" target="_blank">Find me on LinkedIn</a>
                 </div>
             </div>
           </div>
 
-        </div>
       </div>
     </section>
 
@@ -356,24 +199,21 @@
      <footer class="footer py-5">
           <div class="container">
                <div class="row">
-
                     <div class="col-lg-12 col-12">                                
-                        <p class="copyright-text text-center">Copyright &copy; 2024 . All rights reserved</p>
-                        <p class="copyright-text text-center">Designed with Tooplate</a></p>
+                        <p class="copyright-text text-center">Copyright &copy; 2025 . All rights reserved</p>
                     </div>
                     
                </div>
           </div>
      </footer>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/Headroom.js"></script>
-    <script src="js/jQuery.headroom.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/custom.js"></script>
+     <script src="js/jquery-3.3.1.min.js"></script>
+     <script src="js/popper.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/Headroom.js"></script>
+     <script src="js/jQuery.headroom.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
 
   </body>
 </html>

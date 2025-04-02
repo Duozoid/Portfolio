@@ -17,7 +17,7 @@ $h3-font-color: #484848;
 $body-font-color: #5b5b5b;
 $text-white: #ffffff;
 $dark-mode-color: #0c0c0d;
-$main-color: #ffc200;
+$main-color: #4db5db;
 $border-color: #f2f2f1;
 $button-color: #474559;
 
@@ -32,10 +32,10 @@ body {
 	font-family: $font-base;
 	padding-top: 70px;
 }
-
 .full-screen {
-	padding: 8rem 0;
-}
+	padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
 
 .small-text {
     color: $body-font-color;
@@ -333,7 +333,8 @@ b, strong {
 			color: $main-color;
 		}
 	}
-	.navbar {
+	
+.navbar {
 		&[class*="headroom--not-top"] {
 			background: $dark-mode-color;
 			border-bottom: 1px solid #1f1f1f;
@@ -349,14 +350,8 @@ b, strong {
 	.color-mode {
 		color: $text-white;
 	}
-	.owl-carousel {
-		.owl-nav button.owl-next,
-		.owl-nav button.owl-prev,
-		button.owl-dot {
-			color: $text-white;
-		}
-	}
-}
+	
+
 
 
 // TIMELINE
@@ -411,69 +406,6 @@ b, strong {
 }
 
 
-// OWL CAROUSEL
-.owl-carousel {
-	.owl-nav {
-		span {
-			display: none;
-		}
-		.owl-prev,
-		.owl-next {
-			&:before {
-				background: none;
-				padding: 0;
-				display: block;
-				position: absolute;
-				top: 50%;
-				transform: translate(0, -50%); 
-				font-family: 'unicons';
-				font-size: 100px;
-				line-height: normal;
-			}
-		}
-		.owl-prev {
-			&:before {
-				content: '\e833';
-  				left: -45px; 
-			}
-		}
-		.owl-next {
-			&:before {
-				content: '\e836';
-  				right: -45px; 
-			}
-		}
-	}
-}
-
-.owl-theme {
-	.owl-nav [class*=owl-] {
-		background: none;
-  		border-radius: 0;
-  		margin: 0;
-  		padding: 0;
-  		font-size: inherit; 
-  		&:hover {
-  			color: $main-color;
-  		}
-	}
-  	.owl-dots {
-  		.owl-dot {
-  			outline: none;
-  			span {
-  				width: 8px;
-  				height: 8px;
-  			}
-  			&.active,
-  			&:hover {
-  				span {
-  					background: $body-font-color;
-  				}
-  			}
-  		}
-  	}
-}
-
 
 // CONTACT FORM
 .contact-form {
@@ -518,20 +450,6 @@ b, strong {
 }
 
 
-// SOCIAL LINKS
-.social-links {
-	.uil {
-		color: #f7f3f3;
-		font-size: 20px;
-		display: block;
-		margin: 5px 0;
-		&:hover {
-			color: $main-color;
-		}
-	}
-}
-
-
 // RESPONSIVE STYLES
 @media (min-width: 1270px) {
 	.owl-theme {
@@ -545,7 +463,8 @@ b, strong {
 
 @media (max-width: 991px) {
 	.full-screen {
-		padding-bottom: 4rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
 	}
 
 	.color-mode {
@@ -630,7 +549,9 @@ b, strong {
 	}
 
 	.full-screen {
-		padding: 4rem 0;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
 	}
 
 	.mobile-block {
@@ -668,14 +589,14 @@ b, strong {
 		margin: 5px;
 		padding: 10px 15px;
 		border: none;
-		background-color: #ffc200;
+		background-color: #4db5db;
 		color: white;
 		border-radius: 5px;
 		cursor: pointer;
 	}
 
 	.filter-buttons button.active {
-		background-color: #ffc200;
+		background-color: #4db5db;
 	}
 
 	.gallery {
@@ -795,4 +716,7 @@ b, strong {
 	  .close-button:hover {
 		background: darkred;
 	  }
-}
+
+	  .columns-2 {
+		column-count: 2;
+	  }

@@ -567,4 +567,10 @@ b, strong {
     display: inline-block;
     vertical-align: top;
   }
+
+  .about-text img,
+.about-image img {
+  max-width: 100%;
+  height: auto;
+}
 }

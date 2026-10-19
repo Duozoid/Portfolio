@@ -648,3 +648,10 @@ b, strong {
 	  .columns-2 {
 		column-count: 2;
 	  }
+	  .about .col-lg-6,
+.about .col-lg-7,
+.about .col-lg-5,
+.about-text,
+.about-image {
+  min-width: 0;
+}
